@@ -1,0 +1,118 @@
+@themeColor: orange;
+
+@import "atk-main.less";
+@import "less/bootstrap.less";
+
+
+.front_blocks{
+	p {
+		text-align: justify;
+	}	
+}
+
+.atk-menu ul {
+	.nav;
+}
+
+.ui-tabs {
+	.nav;
+	.nav-tabs;
+}
+.navbar .brand {
+	padding: 0px 50px;
+	
+	border: none;
+	.navbar-inner{
+		border: none;
+	}
+}
+
+.footer{
+	.navbar;
+	.footer-inner{
+		.navbar-inner;
+		min-height: 50px;
+		border: none;
+		.border-radius(0px);
+
+		a:hover{
+			.neon;
+		}
+	}
+}
+
+.hero-unit {
+	img{
+		padding: 2px;
+		margin: 20px;
+	}
+	p{
+		text-align: justify;
+	}
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.carousel-control.right{
+	right: 60px;
+}
+
+.copyright {
+	color: @themeColor;
+}
+
+body {
+	background: url('../img/bg-hex.png');
+	color: lighten(@blue,40%);
+}
+
+.neon {
+	border: 1px solid rgba(200, 230, 255, 0.898);
+    box-shadow: 0 0 25px rgba(100, 190, 255, 0.698), 0 0 5px rgba(30, 170, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698) inset, 0 0 5px rgba(30, 170, 255, 0.698) inset, 0 0 25px rgba(100, 190, 255, 0.698) inset;
+}
+
+.mainbodycontainer {
+	background-color: lighten(#021424,10%);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	.border-radius(5px);
+	.neon;
+}
+
+.thumbnails h3 {
+	text-shadow: 0px -1px 1px @white;
+}
+
+div#slider-thumbs {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+	padding-bottom: -10px;
+	width: auto;
+	background-color: #021424;
+	.neon;
+}
+
+#impress {
+	color: black;
+}
+
+.hero-unit{
+	color: black;
+}
+
+.navbar .nav li a {
+	font-size: 15px;
+	font-family: 'Ropa Sans', sans-serif; @import url(http://fonts.googleapis.com/css?family=Ropa+Sans); 
+	&:hover{
+		text-shadow: 0 0 25px rgba(100, 190, 255, 0.698), 0 0 5px rgba(30, 170, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698) inset, 0 0 5px rgba(30, 170, 255, 0.698) inset, 0 0 25px rgba(100, 190, 255, 0.698) inset;
+	};
+}
+
+h5 a, h4 a {
+	color: white;
+}
