@@ -14,14 +14,14 @@ $config['logger']['log_dir']='./';
 
 
 $config['tmail']['transport'] = "PHPMailer";
-$config['tmail']['phpmailer']['from'] = "info@xavoc.com";
-$config['tmail']['from'] = "info@xavoc.com";
+$config['tmail']['phpmailer']['from'] = "your_email_id@xavoc.com";
+$config['tmail']['from'] = "your_email_id@xavoc.com";
 $config['tmail']['phpmailer']['from_name'] = "Xavoc International";
 $config['tmail']['smtp']['host'] = "ssl://mail.xavoc.com";
 $config['tmail']['smtp']['port'] = 465;
-$config['tmail']['phpmailer']['username'] = "info@xavoc.com";
+$config['tmail']['phpmailer']['username'] = "your_email_id@xavoc.com";
 $config['tmail']['phpmailer']['password'] = "Your Password here";
-$config['tmail']['phpmailer']['reply_to'] = "info@xavoc.com";
+$config['tmail']['phpmailer']['reply_to'] = "your_email_id@xavoc.com";
 $config['tmail']['phpmailer']['reply_to_name'] = "Xavoc International";
 
 $config['map']['google']['key']="Your Key Here";
