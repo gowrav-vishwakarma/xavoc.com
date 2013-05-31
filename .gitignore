@@ -1,2 +1,4 @@
 config-default.php
+*.orig
+*.zip
 
