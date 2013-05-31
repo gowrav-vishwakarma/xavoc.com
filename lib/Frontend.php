@@ -40,34 +40,7 @@ class Frontend extends ApiFrontend {
             ->_load('ui.atk4_notify')
             ;
 
-        // If you wish to restrict actess to your pages, use BasicAuth class
-            
-        
-        
-//      $auth=  $this->add('Auth')
-//            
-//              ->allow('nitin','bvmsss')
-//              
-        //     // use check() and allowPage for white-list based auth checking
-        // $auth=$this->add('BasicAuth');
-        //   $auth->setModel('xavoc_acl/ACLUser','username','password');
-        //   $auth->allowPage(array('corrections'));
-        //   $auth->check()
-            ;
-        // This method is executed for ALL the peages you are going to add,
-        // before the page class is loaded. You can put additional checks
-        // or initialize additional elements in here which are common to all
-        // the pages.
 
-        // Menu:
-
-        // If you are using a complex menu, you can re-define
-        // it and place in a separate class
-        
-     // $pp=$this->api->auth->model['master'];
-     // $dd=$this->api->auth->model['data'];
-     // $rr=$this->api->auth->model['reports'];
-     // $usr=$this->api->auth->model['user'];
         $m=$this->add('boot/Menu',array('fixed_top'=>true),'Menu');  
         $m->addMenuItem('index','Home');
         // $m->addMenuItem('xbank','XBank');
@@ -81,6 +54,7 @@ class Frontend extends ApiFrontend {
         // $m->addMenuItem('opensource','Open Source Contribution');
         $m->addMenuItem('aboutus','About Xavoc');
         $m->addMenuItem('contactus','Contact Us');
+        $m->addMenuItem('trainings','Training@xavoc');
 
 
           
