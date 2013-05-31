@@ -44,7 +44,7 @@ class page_contactus extends Page {
 			try{
 				$emails_array= explode( ',', "info@xavoc.com,gowravvishwakarma@gmail.com" );
 				foreach ( $emails_array as $email_id ) {
-					$tm->send( $email_id, "", $subject, $email_body );
+					$tm->send( $email_id, "", $subject, $email_body, "", $form->get('EMail'), $form->get('Name') );
 				}
 			}catch( phpmailerException $e ) {
 				throw $this->exception( $e->errorMessage() );
