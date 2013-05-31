@@ -81,7 +81,6 @@ class Frontend extends ApiFrontend {
         // $m->addMenuItem('opensource','Open Source Contribution');
         $m->addMenuItem('aboutus','About Xavoc');
         $m->addMenuItem('contactus','Contact Us');
-        $m->addMenuItem('test','Test Us');
 
 
           
