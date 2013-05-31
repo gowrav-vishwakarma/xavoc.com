@@ -7179,6 +7179,10 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 .front_blocks p {
   text-align: justify;
 }
@@ -7277,9 +7281,12 @@ a.badge:focus {
 .footer .footer-inner:after {
   clear: both;
 }
-.footer .footer-inner a:hover {
+.footer .footer-inner a.glow:hover {
   border: 1px solid rgba(200, 230, 255, 0.898);
   box-shadow: 0 0 25px rgba(100, 190, 255, 0.698), 0 0 5px rgba(30, 170, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698) inset, 0 0 5px rgba(30, 170, 255, 0.698) inset, 0 0 25px rgba(100, 190, 255, 0.698) inset;
+}
+.footer .footer-inner span.pull-left {
+  padding: 10px;
 }
 .hero-unit img {
   padding: 2px;
