@@ -4,6 +4,7 @@ class page_trainings extends Page {
 	function init(){
 		parent::init();
 
+		$this->api->template->trySet('keywords','php training, php education, industrial training in php, internship in php in india, codeigniter, joomla, template, component development, udaipur, rajasthan, india');
 
 		$heading= $this->add('View');
 		$heading->add('H4')->set('Xavoc\'s Training: PHP + MySQL + Agiletoolkit [UK Based Certification]');
