@@ -8,7 +8,7 @@ class Frontend extends ApiFrontend {
         parent::init();
         // Keep this if you are going to use database on all pages
         //$this->dbConnect();
-       // $this->api->dbConnect() ;
+       $this->api->dbConnect() ;
         $this->requires('atk','4.2.1');
 
         // This will add some resources from atk4-addons, which would be located
@@ -55,6 +55,7 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('aboutus','About Xavoc');
         $m->addMenuItem('contactus','Contact Us');
         $m->addMenuItem('trainings','Training@xavoc');
+        // $m->addMenuItem('test2','Test Agile speed');
 
 
           
