@@ -8,23 +8,24 @@ class Frontend extends ApiFrontend {
         parent::init();
         // Keep this if you are going to use database on all pages
         //$this->dbConnect();
-       $this->api->dbConnect() ;
+       // $this->api->dbConnect() ;
         $this->requires('atk','4.2.1');
 
         // This will add some resources from atk4-addons, which would be located
         // in atk4-addons subdirectory.
-        $this->addLocation('atk4-addons',array(
+        $this->addLocation('../atk4-addons',array(
                     'php'=>array(
                         'mvc',
                         'misc/lib',
                         'filestore/lib',
                         )
                     ))
-            ->setParent($this->pathfinder->base_location);
+            ->setParent('.');
         
-        $this->addLocation('.',array(
+        $this->addLocation('../.',array(
             "addons"=>'xavoc-addons'
         ));
+
 
 
 //$this->api->dbConnect();
@@ -43,24 +44,6 @@ class Frontend extends ApiFrontend {
 
         $m=$this->add('boot/Menu',array('fixed_top'=>true),'Menu');  
         $m->addMenuItem('index','Home');
-        // $m->addMenuItem('xbank','XBank');
-        // $m->addMenuItem('agiletoolkit','AgileToolkit');
-        // $m->addMenuItem('opensource','OpenSource');
-        // $m->addMenuItem('publicservices','PublicServices');
-        $m->addMenuItem('xcideveloper','xCIDeveloper');
-        $m->addMenuItem('xjdatamapper','xjDataMapper');
-        // $m->addMenuItem('xavocproducts','Products And Services');
-        // $m->addMenuItem('publicservices','Public Services');
-        // $m->addMenuItem('opensource','Open Source Contribution');
-        $m->addMenuItem('aboutus','About Xavoc');
-        $m->addMenuItem('contactus','Contact Us');
-        $m->addMenuItem('trainings','Training@xavoc');
-        // $m->addMenuItem('test2','Test Agile speed');
-
-
-          
-        //$this->add('H1', null, 'logo')->set("BVMSSS");
-        $this->addLayout('UserMenu');
         
     }
     function layout_UserMenu(){

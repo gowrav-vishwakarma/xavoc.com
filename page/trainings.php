@@ -64,6 +64,11 @@ class page_trainings extends Page {
 			$form->js()->reload(array('submitted'=>true))->execute();
 		});
 
+		$franchisee_form=$this->add('Button',null,'bottom');//	,'Appy For Franchisee');
+		$franchisee_form->set('Apply For Franchisee');
+		$franchisee_form->addClass('btn btn-large');
+		$franchisee_form->js('click')->univ()->frameURL("Apply For Franchisee",$this->api->url('franchiseeForm'));
+
 	}
 
 	function defaultTemplate(){
