@@ -5,7 +5,8 @@ class Model_Book extends Model_Table {
 	function init(){
 		parent::init();
 
-		$this->addField('name');
 		$this->hasOne('User','user_id');
+		$this->addField('name');
+		$this->hasMany('Reader','book_id');
 	}
 }

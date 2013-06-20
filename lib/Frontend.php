@@ -55,7 +55,7 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('aboutus','About Xavoc');
         $m->addMenuItem('contactus','Contact Us');
         $m->addMenuItem('trainings','Training@xavoc');
-        // $m->addMenuItem('test2','Test Agile speed');
+        // $m->addMenuItem('test','Test Agile speed');
 
 
           
