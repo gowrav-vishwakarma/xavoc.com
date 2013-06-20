@@ -1,13 +1,7 @@
-@themeColor: orange;
+@themeColor: red;
 
 @import "atk-main.less";
 @import "less/bootstrap.less";
-
-
-body { 
-	padding-top: 20px; 
-	padding-bottom: 40px; 
-}
 
 
 .front_blocks{
@@ -75,13 +69,25 @@ body {
 }
 
 body {
-	background: url('../img/bg-hex.png');
+	background: url('../img/bg.jpg');
 	color: lighten(@blue,40%);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: -100px 0px 0px 0px;
+	padding-top: 30px; 
+	padding-bottom: 40px; 
+
 }
 
 .neon {
-	border: 1px solid rgba(200, 230, 255, 0.898);
-    box-shadow: 0 0 25px rgba(100, 190, 255, 0.698), 0 0 5px rgba(30, 170, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698) inset, 0 0 5px rgba(30, 170, 255, 0.698) inset, 0 0 25px rgba(100, 190, 255, 0.698) inset;
+	border: 1px solid rgba(255, 255, 255, 0.898);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.698), 0 0 5px rgba(255, 255, 255, 0.698), 0 0 3px rgba(255, 255, 255, 0.698), 0 0 3px rgba(255, 255, 255, 0.698) inset, 0 0 5px rgba(255, 255, 255, 0.698) inset, 0 0 25px rgba(255, 255, 255, 0.698) inset;
+}
+
+.neon_old {
+	border: 1px solid rgba(255, 100, 100, 0.898);
+    box-shadow: 0 0 25px rgba(100, 190, 100, 0.698), 0 0 5px rgba(30, 170, 100, 0.698), 0 0 3px rgba(255, 100, 100, 0.698), 0 0 3px rgba(255, 100, 100, 0.698) inset, 0 0 5px rgba(30, 170, 100, 0.698) inset, 0 0 25px rgba(100, 190, 100, 0.698) inset;
 }
 
 .mainbodycontainer {
@@ -120,7 +126,7 @@ div#slider-thumbs {
 	font-size: 15px;
 	font-family: 'Ropa Sans', sans-serif; @import url(http://fonts.googleapis.com/css?family=Ropa+Sans); 
 	&:hover{
-		text-shadow: 0 0 25px rgba(100, 190, 255, 0.698), 0 0 5px rgba(30, 170, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698), 0 0 3px rgba(200, 230, 255, 0.698) inset, 0 0 5px rgba(30, 170, 255, 0.698) inset, 0 0 25px rgba(100, 190, 255, 0.698) inset;
+		text-shadow: 0 0 25px rgba(100, 190, 100, 0.698), 0 0 5px rgba(30, 170, 100, 0.698), 0 0 3px rgba(255, 100, 100, 0.698), 0 0 3px rgba(255, 100, 100, 0.698) inset, 0 0 5px rgba(30, 170, 100, 0.698) inset, 0 0 25px rgba(100, 190, 100, 0.698) inset;
 	};
 }
 
